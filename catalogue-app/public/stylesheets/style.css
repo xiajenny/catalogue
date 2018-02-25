@@ -104,7 +104,8 @@ main {
 }
 
 #sidebar .list-group-item:last-child{
-    margin-top: 55%;
+    position:fixed;
+    bottom: 2%;
     padding-left: 0;
     margin-left: 0;
 }
@@ -116,3 +117,6 @@ main {
     color: white !important;
 }
 
+::-webkit-placeholder { 
+    color: white;
+}

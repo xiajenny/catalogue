@@ -117,3 +117,6 @@ main {
     color: white !important;
 }
 
+::-webkit-placeholder { 
+    color: white;
+}

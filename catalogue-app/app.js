@@ -60,9 +60,6 @@ Item.find({}, function(err, items){
   }
 });
 
-
-
-
 var app = express();
 
 // view engine setup

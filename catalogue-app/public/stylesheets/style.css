@@ -6,6 +6,13 @@ body {
 
 #logo {
     color: white;
+    transition: all 0.2s;
+}
+
+#logo:hover,
+#logo:active{
+    color: aliceblue;
+    cursor: pointer;
 }
 
 .container-fluid {
@@ -37,7 +44,7 @@ main {
 .add-btn:hover,
 .add-btn:active {
     transform: scale(1.03);
-    background-color: azure;
+    background-color: aliceblue;
     cursor: pointer;
 }
 

@@ -13,6 +13,8 @@ body {
 #logo:active{
     color: aliceblue;
     cursor: pointer;
+    transform: scale(1.05);
+    
 }
 
 .container-fluid {

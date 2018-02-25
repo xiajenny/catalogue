@@ -159,3 +159,9 @@ main {
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
 }
+
+.form-control {
+    background-color: #333;
+    border-color: white;
+    color: white;
+}

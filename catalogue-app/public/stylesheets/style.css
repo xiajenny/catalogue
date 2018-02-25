@@ -20,16 +20,21 @@ body {
 
 main {
   background: #fff;
+    margin-left: 20%;
 }
 
 .img-thumbnail {
   border-radius: 20px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    margin-bottom: 30px;
 }
 
 #sidebar {
   overflow: hidden;
-  z-index: 3;
+  z-index: 1;
+    height: 100%;
+    position: fixed;
+
 }
 #sidebar .list-group {
   min-width: 400px;
@@ -112,4 +117,3 @@ padding-left: 40px;
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-

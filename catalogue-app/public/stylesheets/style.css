@@ -31,22 +31,24 @@ main {
   overflow: hidden;
   z-index: 3;
 }
+
 #sidebar .list-group {
   min-width: 400px;
-  background-color: #333;
+  background-color: #fff;
   min-height: 100vh;
 }
+
 #sidebar i {
   margin-right: 6px;
 }
 
 #sidebar .list-group-item {
   border-radius: 0;
-  background-color: #333;
-  color: #ccc;
+  background-color: #fff;
+  color: #454545;
   border-left: 0;
   border-right: 0;
-  border-color: #2c2c2c;
+  border-color: #fff;
   white-space: nowrap;
 }
 

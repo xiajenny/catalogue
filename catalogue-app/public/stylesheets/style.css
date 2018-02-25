@@ -1,7 +1,6 @@
 body {
     padding: 50px;
     font-family: 'Roboto Mono', monospace;
-    /* background: black; */
     padding: 0;
 }
 
@@ -10,7 +9,7 @@ body {
 }
 
 .container-fluid {
-    background-color: black;
+    background-color: #333;
 }
 
 .header {
@@ -31,10 +30,29 @@ main {
     box-shadow: -8px 0 6px -6px rgba(0, 0, 0, 0.16);
 }
 
+.add-btn {
+    transition: all 0.2s, border 0.2s, color 0.2s;
+}
+
+.add-btn:hover,
+.add-btn:active {
+    transform: scale(1.03);
+    background-color: azure;
+    cursor: pointer;
+}
+
 .img-thumbnail {
     border-radius: 20px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.16);
     margin-bottom: 30px;
+    transition: all 0.2s, border 0.2s, color 0.2s;
+}
+
+.img-thumbnail:hover,
+.img-thumbnail:active{
+    transform: scale(1.03);
+    opacity: .5;
+    cursor: pointer;
 }
 
 #sidebar {
@@ -62,84 +80,18 @@ main {
 
 #sidebar .list-group-item {
     border-radius: 0;
-    background-color: #ff;
+    background-color: #fff;
     color: #454545;
     border-left: 0;
     border-right: 0;
     border-color: #fff;
     white-space: nowrap;
+    transition: all 0.2s
 }
 
-/* highlight active menu */
-
-#sidebar .list-group-item:not(.collapsed) {
-    background-color: #222;
-}
-
-/* closed state */
-
-#sidebar .list-group .list-group-item[aria-expanded="false"]::after {
-    content: " \f0d7";
-    font-family: FontAwesome;
-    display: inline;
-    text-align: right;
-    padding-left: 5px;
-}
-
-/* open state */
-
-#sidebar .list-group .list-group-item[aria-expanded="true"] {
-    background-color: #222;
-}
-
-#sidebar .list-group .list-group-item[aria-expanded="true"]::after {
-    content: " \f0da";
-    font-family: FontAwesome;
-    display: inline;
-    text-align: right;
-    padding-left: 5px;
-}
-
-/* level 1*/
-
-#sidebar .list-group .collapse .list-group-item,
-#sidebar .list-group .collapsing .list-group-item {
-    padding-left: 20px;
-}
-
-/* level 2*/
-
-#sidebar .list-group .collapse > .collapse .list-group-item,
-#sidebar .list-group .collapse > .collapsing .list-group-item {
-    padding-left: 30px;
-}
-
-/* level 3*/
-
-#sidebar .list-group .collapse > .collapse > .collapse .list-group-item {
-    padding-left: 40px;
-}
-
-.collapse.show {
-    visibility: visible;
-}
-
-.collapsing {
-    visibility: visible;
-    height: 0;
-    -webkit-transition-property: height, visibility;
-    transition-property: height, visibility;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
-}
-
-.collapsing.width {
-    -webkit-transition-property: width, visibility;
-    transition-property: width, visibility;
-    width: 0;
-    height: 100%;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
+#sidebar .list-group-item:hover,
+#sidebar .list-group-item:active{
+    background-color: #e0e0e0;
 }
 
 .form-control, .form-control-sm, option {

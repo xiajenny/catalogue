@@ -1,136 +1,140 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
+
+<head>
+    <title>
+        <%= title %>
+    </title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
-  </head>
-  <body>
-    <div class="container-fluid header">
-      <div class="row">
-        <div class="col-9"></div>
-        <div class="col-2">
-          <h2 id="logo">MYNE.TECH</h2>
-        </div>
-      </div>
-      
-      <form>
-        <div class="row">
-          <div class="col-2">
-            <select class="form-control form-control-sm" id="exampleFormControlSelect1">
-              <option>Tops</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-            </select>
-          </div>
-          <div class="col-2">
-            <select class="form-control form-control-sm" id="exampleFormControlSelect1">
-              <option>Winter</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-            </select>
-          </div>
-          <div class="col-2">
-            <select class="form-control form-control-sm" id="exampleFormControlSelect1">
-              <option>Filter</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-            </select>
-          </div>
-          <div class="col-2">
-            <select class="form-control form-control-sm" id="exampleFormControlSelect1">
-              <option>Filter</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-            </select>
-          </div>
-          <div class="col-1"></div>
-          <div class="col-2">
-            <input type="text" class="form-control form-control-sm" placeholder="Search..">
-          </div>
-        </div>
-      </form>
+</head>
 
-    </div>
+<body>
+    <header class="container-fluid header">
+        <div class="row">
+            <div class="col-9"></div>
+            <div class="col-2">
+                <h2 id="logo">MYNE.TECH</h2>
+            </div>
+        </div>
+
+        <form>
+            <div class="row">
+                <div class="col-2">
+                    <select class="form-control form-control-sm" id="exampleFormControlSelect1">
+              <option>Tops</option>
+              <option>Bottoms</option>
+              <option>Shoes</option>
+              <option>Accessories</option>
+              <option>Bags</option>
+            </select>
+                </div>
+                <div class="col-2">
+                    <select class="form-control form-control-sm" id="exampleFormControlSelect1">
+              <option>Winter</option>
+              <option>Spring</option>
+              <option>Summer</option>
+              <option>Fall</option>
+              <option>All</option>
+            </select>
+                </div>
+                <div class="col-2">
+                    <select class="form-control form-control-sm" id="exampleFormControlSelect1">
+              <option>Sort</option>
+              <option>Newest to Oldest</option>
+              <option>Oldest to Newest</option>
+              <option>Most expensive to least expensive</option>
+              <option>Least expensive to most expensive</option>
+            </select>
+                </div>
+                <div class="col-2">
+                    <select class="form-control form-control-sm" id="exampleFormControlSelect1">
+              <option>Filter</option>
+              <option>Clothes only</option>
+              <option>Home items only</option>
+              <option>Devices only</option>
+              <option>All</option>
+            </select>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-2">
+                    <input type="text" class="form-control form-control-sm" placeholder="Search..">
+                </div>
+            </div>
+        </form>
+
+    </header>
 
     <div class="main-section">
 
-      <div class="col-md-3 float-left col-1 pl-0 pr-0 collapse width show" id="sidebar">
-          <div class="list-group border-0 card text-center text-md-left">
-          <a href="#menu1" class="list-group-item d-inline-block collapsed" data-parent="#sidebar"><i class="fa fa-dashboard"></i> <span class="d-none d-md-inline">Home</span> </a>
-          <a href="#" class="list-group-item d-inline-block collapsed" data-parent="#sidebar"><i class="fa fa-film"></i> <span class="d-none d-md-inline">Visuals</span></a>
-          <a href="#menu3" class="list-group-item d-inline-block collapsed" data-parent="#sidebar"><i class="fa fa-book"></i> <span class="d-none d-md-inline">Stats </span></a>
-          <a href="#" class="list-group-item d-inline-block collapsed" data-parent="#sidebar"><i class="fa fa-heart"></i> <span class="d-none d-md-inline">Organize</span></a>
+        <div class="col-md-3 float-left col-1 pl-0 pr-0 collapse width show" id="sidebar">
+            <div class="list-group border-0 card text-center text-md-left">
+                <a href="#menu1" class="list-group-item d-inline-block collapsed" data-parent="#sidebar"><i class="fa fa-dashboard"></i> <span class="d-none d-md-inline">Home</span> </a>
+                <a href="#" class="list-group-item d-inline-block collapsed" data-parent="#sidebar"><i class="fa fa-film"></i> <span class="d-none d-md-inline">Visuals</span></a>
+                <a href="#menu3" class="list-group-item d-inline-block collapsed" data-parent="#sidebar"><i class="fa fa-book"></i> <span class="d-none d-md-inline">Stats </span></a>
+                <a href="#" class="list-group-item d-inline-block collapsed" data-parent="#sidebar"><i class="fa fa-heart"></i> <span class="d-none d-md-inline">Organize</span></a>
 
-      </div>
-    </div>
-
-    <main class="col-md-9 float-left col px-5 pl-md-2 pt-2 main">
-        <a href="#" data-target="#sidebar" data-toggle="collapse"><i class="fa fa-navicon fa-2x py-2 p-1"></i></a>
-        <div class="page-header">
-            <h2>Catalogue Demo</h2>
+            </div>
         </div>
-        <p class="lead">Made for Cynthia Wang XD</p>
-        <hr>
-        <div class="row">
-            <div class="col-md-6">
-                <button role="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo" aria-expanded="true">
+
+        <main class="col-md-9 float-left col px-5 pl-md-2 pt-2 main">
+            <a href="#" data-target="#sidebar" data-toggle="collapse"><i class="fa fa-navicon fa-2x py-2 p-1"></i></a>
+            <div class="page-header">
+                <h2>Catalogue Demo</h2>
+            </div>
+            <p class="lead">Made for Cynthia Wang XD</p>
+            <hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <button role="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo" aria-expanded="true">
                     horizontal collapsible
                 </button>
-                <div id="demo" class="width collapse show" aria-expanded="true">
-                    <div class="list-group" style="width: 400px;">
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <div id="demo" class="width collapse show" aria-expanded="true">
+                        <div class="list-group" style="width: 400px;">
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-6">
-                <button role="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo2" aria-expanded="true">
+                <div class="col-md-6">
+                    <button role="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo2" aria-expanded="true">
                    vertical collapsible
                 </button>
-                <div id="demo2" class="height collapse show" aria-expanded="true">
-                    <div>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <div id="demo2" class="height collapse show" aria-expanded="true">
+                        <div>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="row">
+            <div class="row">
 
-          <div class="col-lg-3">
-            <img src="/images/clothes-04.svg" class="img-thumbnail"/>
-          </div>
+                <div class="col-lg-3">
+                    <img src="/images/clothes-04.svg" class="img-thumbnail" />
+                </div>
 
-          <div class="col-lg-3">
-              <img src="/images/clothes-05.svg" class="img-thumbnail"/>
-          </div>
+                <div class="col-lg-3">
+                    <img src="/images/clothes-05.svg" class="img-thumbnail" />
+                </div>
 
-          <div class="col-lg-3">
-              <img src="/images/clothes-06.svg" class="img-thumbnail"/>
-          </div>
+                <div class="col-lg-3">
+                    <img src="/images/clothes-06.svg" class="img-thumbnail" />
+                </div>
 
-          <div class="col-lg-3">
-              <img src="/images/clothes-07.svg" class="img-thumbnail"/>
-          </div>
-          
-        </div>
-    </main>
-  </div>
+                <div class="col-lg-3">
+                    <img src="/images/clothes-07.svg" class="img-thumbnail" />
+                </div>
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
- 
+            </div>
+        </main>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
 </html>

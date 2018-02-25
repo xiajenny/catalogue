@@ -142,8 +142,9 @@ main {
     transition-timing-function: ease-out;
 }
 
-.form-control {
+.form-control, .form-control-sm, option {
     background-color: #333;
     border-color: white;
     color: white;
 }
+

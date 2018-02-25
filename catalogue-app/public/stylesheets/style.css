@@ -20,19 +20,31 @@ body {
 
 main {
   background: #fff;
+<<<<<<< HEAD
+    margin-left: 20%;
+=======
   margin-left: 30px;
+>>>>>>> bc10f1ffde9a20db2e934c132657a9f93e8562cf
 }
 
 .img-thumbnail {
   border-radius: 20px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    margin-bottom: 30px;
 }
 
 #sidebar {
   overflow: hidden;
+<<<<<<< HEAD
+  z-index: 1;
+    height: 100%;
+    position: fixed;
+
+=======
   z-index: 3;
    box-shadow: 8px 0 6px -6px rgba(0,0,0,0.16);
     width: 20%;
+>>>>>>> bc10f1ffde9a20db2e934c132657a9f93e8562cf
 }
 
 #sidebar .list-group {
@@ -117,4 +129,3 @@ padding-left: 40px;
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-

@@ -5,8 +5,63 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+//import mongoose
+var mongoose = require('mongoose');
+mongoose.connect("mongodb://localhost/item");
+
 var index = require('./routes/index');
 var users = require('./routes/users');
+
+//create item database
+var itemSchema = new mongoose.Schema({
+  name: String,
+  description: String,
+  price: Number,
+  quantity: Number,
+  purchaseLocation: String,
+  purchaseMethod: String,
+  reciept: String,
+  picture: String,
+  tag: Array,
+  category: String,
+  user_name: String
+});
+
+var Item = mongoose.model("Item", itemSchema);
+
+Item.create({
+  name: 'Herschel Backpack',
+  description: 'this is a description',
+  price: 70,
+  quantity: 1,
+  purchaseLocation: 'Nordstrom',
+  purchaseMethod: 'Cash',
+  reciept: 'https://expressexpense.com/images/itemized4-receipt-small.jpg',
+picture: 'https://n.nordstrommedia.com/ImageGallery/store/product/Zoom/10/_101318470.jpg',
+  tag: ['summer','fall','formal'],
+  category: 'bags',
+  user_name: 'Jackson Zheng'
+}, function(err, item){
+    if(err){
+      console.log(err);
+    } else{
+        console.log("created new item");
+        console.log(item);
+    }
+});
+
+Item.find({}, function(err, items){
+  if(err){
+      console.log("ERROR!!");
+      console.log(err);
+  } else {
+      console.log("all the items: ");
+      console.log(items);
+  }
+});
+
+
+
 
 var app = express();
 

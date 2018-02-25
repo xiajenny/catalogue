@@ -104,7 +104,8 @@ main {
 }
 
 #sidebar .list-group-item:last-child{
-    margin-top: 55%;
+    position:fixed;
+    bottom: 10px;
     padding-left: 0;
     margin-left: 0;
 }

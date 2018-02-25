@@ -20,7 +20,11 @@ body {
 
 main {
   background: #fff;
+<<<<<<< HEAD
     margin-left: 20%;
+=======
+  margin-left: 30px;
+>>>>>>> bc10f1ffde9a20db2e934c132657a9f93e8562cf
 }
 
 .img-thumbnail {
@@ -31,27 +35,35 @@ main {
 
 #sidebar {
   overflow: hidden;
+<<<<<<< HEAD
   z-index: 1;
     height: 100%;
     position: fixed;
 
+=======
+  z-index: 3;
+   box-shadow: 8px 0 6px -6px rgba(0,0,0,0.16);
+    width: 20%;
+>>>>>>> bc10f1ffde9a20db2e934c132657a9f93e8562cf
 }
+
 #sidebar .list-group {
   min-width: 400px;
-  background-color: #333;
+  background-color: #fff;
   min-height: 100vh;
 }
+
 #sidebar i {
   margin-right: 6px;
 }
 
 #sidebar .list-group-item {
   border-radius: 0;
-  background-color: #333;
-  color: #ccc;
+  background-color: #fff;
+  color: #454545;
   border-left: 0;
   border-right: 0;
-  border-color: #2c2c2c;
+  border-color: #fff;
   white-space: nowrap;
 }
 

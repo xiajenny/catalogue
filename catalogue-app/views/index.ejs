@@ -6,7 +6,6 @@
         MYNE
     </title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
 </head>
@@ -16,7 +15,7 @@
         <div class="row">
             <div class="col-9"></div>
             <div class="col-2">
-                <h2 id="logo">MYNE.TECH</h2>
+                <img src="/images/logo-08-08.svg"id="logo" />
             </div>
         </div>
 
@@ -70,15 +69,28 @@
     <div class="main-section">
         <div class="col-md-3 float-left col-1 pl-0 pr-0 collapse width show" id="sidebar">
             <div class="list-group border-0 card text-center text-md-left">
-                <a href="#" class="list-group-item d-inline-block collapsed " data-parent="#sidebar"><i class="fa fa-dashboard"></i> <span class="d-none d-md-inline ">Home</span> </a>
+<<<<<<< HEAD
+                <a href="#menu1" class="list-group-item d-inline-block collapsed" data-parent="#sidebar"><i class="fa fa-dashboard"></i> <span class="d-none d-md-inline">Home</span> </a>
+                <a href="#" class="list-group-item d-inline-block collapsed" data-parent="#sidebar"><i class="fa fa-film"></i> <span class="d-none d-md-inline">Visuals</span></a>
+                <a href="#menu3" class="list-group-item d-inline-block collapsed" data-parent="#sidebar"><i class="fa fa-book"></i> <span class="d-none d-md-inline">Stats </span></a>
+                <a href="#" class="list-group-item d-inline-block collapsed" data-parent="#sidebar"><i class="fa fa-heart"></i> <span class="d-none d-md-inline">Organize</span></a>
+=======
+                <a href="#" class="list-group-item" data-parent="#sidebar"><i class="fa fa-dashboard"></i> <span class="d-none d-md-inline ">Home</span> </a>
                 
-                <a href="#visuals" class="list-group-item d-inline-block collapsed" data-parent="#sidebar"><i class="fa fa-film"></i> <span class="d-none d-md-inline">Visuals</span></a>
+                <a href="#visuals" class="list-group-item" data-parent="#sidebar"><i class="fa fa-film"></i> <span class="d-none d-md-inline">Organize</span></a>
                 
-                <a href="#stats" class="list-group-item d-inline-block collapsed" data-parent="#sidebar"><i class="fa fa-book"></i> <span class="d-none d-md-inline">Stats </span></a>
+                <a href="#stats" class="list-group-item" data-parent="#sidebar"><i class="fa fa-book"></i> <span class="d-none d-md-inline">Stats </span></a>
                 
-                <a href="#organize" class="list-group-item d-inline-block collapsed" data-parent="#sidebar"><i class="fa fa-heart"></i> <span class="d-none d-md-inline">Organize</span></a>
+                <a href="#organize" class="list-group-item" data-parent="#sidebar"><i class="fa fa-heart"></i> <span class="d-none d-md-inline">Settings</span></a>
+                
+                <a href="#account" class="list-group-item" data-parent="#sidebar"><i class="fa fa-heart"></i> <span class="d-none d-md-inline">Account</span></a>
+                               
+                <a href="#signout" class="list-group-item" data-parent="#sidebar"><i class="fa fa-heart"></i> <span class="d-none d-md-inline">SIGNOUT</span></a>
+                                
+>>>>>>> 3e5ad78041b7e6afa219df3a573467c7d7821d20
             </div>
         </div>
+
     </div>
 
     <main class="col-md-9 float-left col px-5 pl-md-5 pt-2 main">
@@ -87,8 +99,13 @@
         <div class="row">
 
             <div class="col-lg-3">
+<<<<<<< HEAD
+                <a data-toggle="modal" data-target="#uploadModal">
+                <img src="/images/add sign-09.svg" class="img-thumbnail" />
+=======
                 <a  data-toggle="modal" data-target="#uploadModal">
-                <img src="/images/add sign2-09.svg" class="img-thumbnail add-btn" />
+                <img src="/images/add sign-09.svg" class="img-thumbnail add-btn" />
+>>>>>>> 3e5ad78041b7e6afa219df3a573467c7d7821d20
                 </a>
             </div>
 
@@ -103,6 +120,8 @@
             <div class="col-lg-3">
                 <img src="/images/clothes-07.svg" class="img-thumbnail" />
             </div>
+
+
 
             <div class="col-lg-3">
                 <img src="/images/clothes-07.svg" class="img-thumbnail" />
@@ -156,13 +175,16 @@
                                 <div class="row">
                                     <div class="col">
                                         <!-- Form -->
-                                        <img src="/images/placeholder.png" width=300%>
+                                        <img src="placeholder.png" width=90%>
                                         <form method='post' action='' enctype="multipart/form-data">
                                             <div class="file-loading">
                                                 <input id="input-ficons-4" name="input-ficons-4[]" multiple type="file">
                                             </div>
-                                    </div>
+                                            
                                             <!-- Preview-->
+
+                                    </div>
+
                                     <div class="col">
                                         <form>
                                             <div class="form-group">
@@ -180,6 +202,10 @@
                                             <div class="form-group">
                                                 <label for="formGroupExampleInput4">Price</label>
                                                 <input type="text" class="form-control" id="formGroupExampleInput4">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="formGroupExampleInput5">Img url</label>
+                                                <input type="url" class="form-control" id="formGroupExampleInput5">
                                             </div>
                                         </form>
                                     </div>
@@ -210,7 +236,7 @@
                     }
                 });
             </script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+
             <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

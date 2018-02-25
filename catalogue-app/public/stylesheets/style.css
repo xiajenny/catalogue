@@ -6,6 +6,15 @@ body {
 
 #logo {
     color: white;
+    transition: all 0.2s;
+}
+
+#logo:hover,
+#logo:active{
+    color: aliceblue;
+    cursor: pointer;
+    transform: scale(1.05);
+    
 }
 
 .container-fluid {
@@ -37,7 +46,7 @@ main {
 .add-btn:hover,
 .add-btn:active {
     transform: scale(1.03);
-    background-color: azure;
+    background-color: aliceblue;
     cursor: pointer;
 }
 
@@ -94,9 +103,20 @@ main {
     background-color: #e0e0e0;
 }
 
+#sidebar .list-group-item:last-child{
+    position:fixed;
+    bottom: 2%;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+
 .form-control, .form-control-sm, option {
     background-color: #333 !important;
     border-color: white !important;
     color: white !important;
 }
 
+::-webkit-placeholder { 
+    color: white;
+}

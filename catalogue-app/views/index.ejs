@@ -101,7 +101,9 @@
             </div>
 
             <div class="col-lg-3">
+                <a data-toggle="modal" data-target="#viewModal">
                 <img src="/images/clothes-05.svg" class="img-thumbnail" />
+                </a>
                 </div>
 
             <div class="col-lg-3">
@@ -151,7 +153,7 @@
             </div>
 
 
-            <!-- Modal -->
+            <!--Upload Modal -->
             <div id="uploadModal" class="modal fade bd-example-modal-lg" role="dialog">
                 <div class="modal-dialog modal-lg">
 
@@ -215,6 +217,75 @@
                 </div>
             </div>
 
+            <!--View Modal -->
+            <div id="viewModal" class="modal fade bd-example-modal-lg" role="dialog">
+                <div class="modal-dialog modal-lg">
+
+                    <!-- Modal content-->
+                     <div class="modal-content">
+                            <div class="modal-header">
+                            <h4 class="modal-title">View + Edit</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <div id="scroll-wrap">
+                            <div class="container">
+                                <div class="row">
+                                   <div class="col">
+                                            <!-- Form -->
+                                            <img src="/images/placeholder.png">
+                                            <form method='post' action='' enctype="multipart/form-data">
+                                                <div class="file-loading">
+                                                    <input id="input-ficons-4" name="input-ficons-4[]" multiple type="file">
+                                                </div>
+                                            
+                                            <!-- Preview-->
+
+                                    </div>
+
+                                    <div class="col">
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="formGroupExampleInput1">Category</label>
+                                                <input type="text" class="form-control" id="formGroupExampleInput1">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="formGroupExampleInput6">Name</label>
+                                                <input type="text" class="form-control" id="formGroupExampleInput6">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="formGroupExampleInput2">Label</label>
+                                                <input type="text" class="form-control" id="formGroupExampleInput2">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="formGroupExampleInput3">Colour</label>
+                                                <input type="text" class="form-control" id="formGroupExampleInput3">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="formGroupExampleInput4">Price</label>
+                                                <input type="text" class="form-control" id="formGroupExampleInput4">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="formGroupExampleInput5">Img url</label>
+                                                <input type="url" class="form-control" id="formGroupExampleInput5">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="formGroupExampleInput6">notes</label>
+                                                <input type="url" class="form-control" id="formGroupExampleInput6">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button id="save" onclick="save()" class="btn save-details" type="button" name="save-details" data-dismiss="modal">Save</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+                
             <script>
                 $("#input-ficons-4").fileinput({
                     uploadUrl: "/file-upload-batch/2",

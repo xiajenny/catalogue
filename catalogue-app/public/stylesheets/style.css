@@ -117,6 +117,12 @@ main {
     color: white !important;
 }
 
+#scroll-wrap {
+    max-height: 70vh;
+    overflow-y: scroll;
+    
+}
+
 ::-webkit-placeholder { 
     color: white;
 }

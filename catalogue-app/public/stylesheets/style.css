@@ -20,6 +20,7 @@ body {
 
 main {
   background: #fff;
+  margin-left: 30px;
 }
 
 .img-thumbnail {
@@ -30,6 +31,8 @@ main {
 #sidebar {
   overflow: hidden;
   z-index: 3;
+   box-shadow: 8px 0 6px -6px rgba(0,0,0,0.16);
+    width: 20%;
 }
 
 #sidebar .list-group {
